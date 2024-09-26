@@ -21,6 +21,8 @@ function createPassword() {
   passwordBox.value = password;
 }
 
+
+// function for copy generated random password with setTimeout
 function copyPassword() {
     const passwordValue = passwordBox.value.trim();
     if (passwordValue !== "") {
