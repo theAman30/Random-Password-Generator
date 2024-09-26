@@ -8,6 +8,7 @@ const specialSymbols = "@#$%^&*()_+~{}|[]/-=";
 
 const allChars = upperCase + lowerCase + numbers + specialSymbols;
 
+// writing a function to generate random password
 function createPassword() {
   let password = "";
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
