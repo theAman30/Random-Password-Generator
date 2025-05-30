@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Password Generator</title>
 
-    <!-- External css file linking -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="title">
-        <span class="first">Random</span><br /><span class="second"
-          >Password Generator</span
-        >
-      </h1>
-      <div class="display">
-        <input
-          type="text"
-          name=""
-          id="password"
-          placeholder="Password"
-          readonly
-        />
-        <img src="images/copy.png" alt="copy" onclick="copyPassword()" />
-      </div>
-      <div class="copied">Copied to clipboard!</div>
-      <button onclick="createPassword()">
-        <img src="images/generate.png" alt="generate" />Generate Password
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Password Generator</title>
+
+  <!-- External css file linking -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">
+      <span class="first">Random</span><br /><span class="second">Password Generator</span>
+    </h1>
+    <div class="display">
+      <input type="text" name="" id="password" placeholder="Password" readonly />
+      <img src="images/copy.png" alt="copy" onclick="copyPassword()" />
     </div>
+    <div class="copied">Copied to clipboard!</div>
+    <button onclick="createPassword()">
+      <img src="images/generate.png" alt="generate" />Generate Password
+    </button>
+  </div>
 
-    <!-- External JS file linking  -->
-    <script src="script.js"></script>
-  </body>
+  <!-- External JS file linking  -->
+  <script src="script.js"></script>
+</body>
+
 </html>

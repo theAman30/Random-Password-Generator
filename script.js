@@ -24,14 +24,14 @@ function createPassword() {
 
 // function for copy generated random password with setTimeout
 function copyPassword() {
-    const passwordValue = passwordBox.value.trim();
-    if (passwordValue !== "") {
-        passwordBox.select();
-        document.execCommand("copy");
-        const copyMessage = document.querySelector(".copied");
-        copyMessage.style.display = "block";
-        setTimeout(function() {
-            copyMessage.style.display = "none";
-        }, 2000);
-    }
+  const passwordValue = passwordBox.value.trim();
+  if (passwordValue !== "") {
+    passwordBox.select();
+    document.execCommand("copy");
+    const copyMessage = document.querySelector(".copied");
+    copyMessage.style.display = "block";
+    setTimeout(function () {
+      copyMessage.style.display = "none";
+    }, 2000);
+  }
 }
